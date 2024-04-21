@@ -3,7 +3,7 @@ use clap::{Args, Parser, Subcommand};
 #[derive(Debug, Parser)]
 #[command(name = "SteelSeries Sonar Config Helper")]
 #[command(author = "ArctixTheFox")]
-#[command(version = "1.0.0")]
+#[command(version = "1.0.1")]
 #[command(about = 
 "A command-line utility designed to simplify the local management of Sonar configurations
 Capable of downloading a JSON configuration to a file given the shared URL
