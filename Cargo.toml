@@ -10,6 +10,12 @@ readme = "README.md"
 #documentation = ""
 description = "A command-line tool to help with Sonar configurations"
 
+[profile.release]
+strip = true
+opt-level = "s"
+lto = true
+codegen-units = 1
+
 [dependencies]
 base64 = "0.22.0"
 clap = { version = "4.5.1", features = ["derive"] }
