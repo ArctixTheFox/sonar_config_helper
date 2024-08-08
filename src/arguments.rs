@@ -3,13 +3,15 @@ use clap::{Args, Parser, Subcommand};
 #[derive(Debug, Parser)]
 #[command(name = "SteelSeries Sonar Config Helper")]
 #[command(author = "ArctixTheFox")]
-#[command(version = "1.0.1")]
-#[command(about = 
-"A command-line utility designed to simplify the local management of Sonar configurations
+#[command(version = "1.0.2")]
+#[command(
+    about = "A command-line utility designed to simplify the local management of Sonar configurations
 Capable of downloading a JSON configuration to a file given the shared URL
 As well as locally host a configuration and generate a URI for importation into Sonar"
 )]
-#[command(help_template = "\n\n{name} \nAuthor: {author-with-newline} {about-section} \nVersion: {version} \n\n{usage-heading} {usage} \n{all-args} \n")]
+#[command(
+    help_template = "\n\n{name} \nAuthor: {author-with-newline} {about-section} \nVersion: {version} \n\n{usage-heading} {usage} \n{all-args} \n"
+)]
 pub struct Arguments {
     #[clap(subcommand)]
     pub command: Command,
@@ -48,5 +50,5 @@ pub struct ServeArgs {
 
     /// Port on which the web server will serve the file
     #[arg(short, long, default_value_t = 0)]
-    pub port: u16
+    pub port: u16,
 }

@@ -1,6 +1,6 @@
 [package]
 name = "sonar_config_helper"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 authors = ["ArctixTheFox"]
 repository = "https://github.com/ArctixTheFox/sonar_config_helper"
